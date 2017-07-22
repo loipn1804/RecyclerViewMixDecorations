@@ -1,16 +1,10 @@
 package phanloi.recyclerviewmixdecorations.decoration;
 
-import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-
-import phanloi.recyclerviewmixdecorations.adapter.BaseItemAdapter;
-import phanloi.recyclerviewmixdecorations.item.Item;
 
 /**
  * Copyright (c) 2017, VNG Corp. All rights reserved.
@@ -56,7 +50,6 @@ public class HorizontalDividerItemDecoration extends RecyclerView.ItemDecoration
             mDivider.draw(c);
 
             if (i == childCount - 1) { // last item
-//                Drawable drawable = mDivider;
                 mDivider.setBounds(left + child.getWidth() + mDivider.getIntrinsicWidth(), top, right + child.getWidth() + mDivider.getIntrinsicWidth(), bottom);
                 mDivider.draw(c);
             }
